@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537 46" width="537" height="46">
+	<defs>
+		<image  width="22" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAMAAABRJ730AAAAAXNSR0IB2cksfwAAAFdQTFRFampqampqAAAAa2trbGxsa2trbW1tbGxsbGxsampqAAAAampqa2trbGxsbGxsbGxsampqbGxsampqa2trbGxsbGxsa2trampqbW1tbGxsa2trampqa2trDw9PfQAAAB10Uk5TVXAAUXv/j4//cwGdlpyVm5STmpOZkpmRmJCXgnzYvyZ5AAAAbElEQVR4nGXOWRKCQAxF0fAwAw+ccGDQ/a9TKJSGNh/5OHUrFZECf1OUclDL1aMS1mG5NhTwuO89ToQAPKtv9TLtiWdfe4srvgy2v/seN6wM3pfe9IENg8/ZXTvsGOzDPAZkDI6aNDH4eqc3PzmgBINzD0dAAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #a6a6a6;stroke-width: 2 } 
+	</style>
+	<use id="arrow_down" href="#img1" x="499" y="18" />
+	<path id="select_field_hover" class="shp0" d="M2 -2L536 -2C537.66 -2 539 -0.66 539 1L539 45C539 46.66 537.66 48 536 48L2 48C0.34 48 -1 46.66 -1 45L-1 1C-1 -0.66 0.34 -2 2 -2Z" />
+</svg>
