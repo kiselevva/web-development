@@ -4,6 +4,7 @@ USES
 FUNCTION GetQueryStringParameter(parameter: STRING): STRING;
 VAR
   QueryString: STRING;
+  Result: STRING;
 BEGIN {GetQueryStringParameter}
   QueryString := GetEnv('QUERY_STRING');
   {поиск parameter= или &parameter=}
@@ -11,12 +12,12 @@ BEGIN {GetQueryStringParameter}
   THEN
     BEGIN
       {копирование подстроки из строки с parameter= до конца}
-      QueryString := COPY(QueryString, POS(parameter + '=', QueryString) + LENGTH(parameter + '='), 255);
+      Result := COPY(QueryString, POS(parameter + '=', QueryString) + LENGTH(parameter + '='), 255);
       {если в скопированной строке есть еще &, то копируем до &}
       IF POS('&', QueryString) <> 0
       THEN
-        QueryString := COPY(QueryString, 1, POS('&', QueryString) - 1);
-      GetQueryStringParameter := QueryString
+        Result := COPY(QueryString, 1, POS('&', QueryString) - 1);
+      GetQueryStringParameter := Result
     END
   ELSE      
     GetQueryStringParameter := ''
